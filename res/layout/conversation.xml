@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/red" >
+
+            <TextView
+                android:id="@+id/tv_ConversationActivity_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="NickName"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               android:id="@+id/rl_ConversationActivity_back"
+                android:layout_toLeftOf="@+id/tv_ConversationActivity_nickname" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_go_back" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:text="返回"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/whitesmoke"
+            android:padding="2dp"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_ConversationActivity_sendmsg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/s1" />
+
+            <ImageView
+                android:id="@+id/iv_ConversationActivity_gift"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_ConversationActivity_sendmsg"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/gift" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                 android:layout_marginRight="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_ConversationActivity_gift"
+                android:src="@drawable/syzp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                 android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:src="@drawable/space" />
+
+        </RelativeLayout>
+    </LinearLayout> <!-- 会话页面 Fragment -->
+
+    <fragment
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>

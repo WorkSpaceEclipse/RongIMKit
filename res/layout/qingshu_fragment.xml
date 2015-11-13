@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="我的情书"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_qingshu_icon"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="去传个帅气的头像吧，吸引更过异性！"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/graywhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_xin_qingshufragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+              >
+
+            <TextView
+                android:id="@+id/tv_xin_qingshufragment"
+                style="@drawable/tv_qingshu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新联系人" />
+
+            <TextView
+                android:id="@+id/tv_xin_num_qingshufragment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@+id/tv_xin_qingshufragment"
+                android:background="@drawable/num_bg"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_hf_qingshufragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+              >
+
+            <TextView
+                android:id="@+id/tv_hf_qingshufragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@drawable/tv_qingshu_selector"
+                android:text="我回复过的" />
+
+            <TextView
+                android:id="@+id/tv_hf_num_qingshufragment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@+id/tv_hf_qingshufragment"
+                android:background="@drawable/num_bg"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_guanzhu_qingshufragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+              >
+
+            <TextView
+                android:id="@+id/tv_gz_qingshufragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@drawable/tv_qingshu_selector"
+                android:text="我关注的人" />
+
+            <TextView
+                android:id="@+id/tv_gz_num_qingshufragment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@+id/tv_gz_qingshufragment"
+                android:background="@drawable/num_bg"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/graywhite" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.android.fragmentbase.MyViewPage
+            android:id="@+id/viewpage_qingshufragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.android.fragmentbase.MyViewPage>
+    </RelativeLayout>
+
+</LinearLayout>

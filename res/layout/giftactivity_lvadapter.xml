@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/iv_giftactivitylxadapter_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/gift" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_giftactivitylxadapter_price"
+            android:layout_alignBottom="@+id/tv_giftactivitylxadapter_price"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_giftactivitylxadapter_price"
+            android:text="TA积分：+0积分" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_charm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_giftactivitylxadapter_price"
+            android:layout_below="@+id/iv_giftactivitylxadapter_gift"
+            android:text="TA魅力：+100" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_giftactivitylxadapter_gift"
+            android:layout_alignLeft="@+id/tv_giftactivitylxadapter_meaning"
+            android:text="售价：10爱币" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_giftactivitylxadapter_point"
+            android:layout_alignLeft="@+id/tv_giftactivitylxadapter_name"
+            android:text="你是我心中不灭的光芒"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_giftactivitylxadapter_meaning"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_giftactivitylxadapter_gift"
+            android:text="name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_giftactivitylxadapter_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_giftactivitylxadapter_meaning"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_giftactivitylxadapter_name"
+            android:text="我的仓库剩余：0"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+</RelativeLayout>

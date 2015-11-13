@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_gzlvadapter_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mylove" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_smsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_gzlvadapter_icon"
+            android:layout_alignTop="@+id/iv_gzlvadapter_icon"
+            android:background="@drawable/num_bg"
+            android:gravity="center"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_gzlvadapter_smsnum"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/iv_gzlvadapter_icon"
+            android:text="NickName" />
+
+        <ImageView
+            android:id="@+id/iv_gzlvadapter_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_gzlvadapter_icon"
+            android:layout_alignLeft="@+id/tv_gzlvadapter_nickname"
+            android:src="@drawable/position" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_gzlvadapter_nickname"
+            android:layout_alignBottom="@+id/tv_gzlvadapter_nickname"
+            android:layout_alignParentRight="true"
+            android:text="2分钟前"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_gzlvadapter_position"
+            android:layout_toRightOf="@+id/iv_gzlvadapter_position"
+            android:text="广州"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_gzlvadapter_province"
+            android:layout_alignBottom="@+id/tv_gzlvadapter_province"
+            android:layout_toRightOf="@+id/tv_gzlvadapter_province"
+            android:text="广东"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_gzlvadapter_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_gzlvadapter_city"
+            android:layout_alignBottom="@+id/tv_gzlvadapter_city"
+            android:layout_alignRight="@+id/tv_gzlvadapter_time"
+            android:layout_marginRight="80dp"
+            android:text="22岁/168"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

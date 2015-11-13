@@ -1,0 +1,136 @@
+# view res/layout/rc_ac_preview.xml #generated:29
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.android.fragmentbase.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.android.fragmentbase.HomeFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.android.fragmentbase.LogoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.android.fragmentbase.MyApplication { <init>(...); }
+
+# view res/layout/homefragmet.xml #generated:73
+# view res/layout/qingshu_fragment.xml #generated:140
+-keep class com.android.fragmentbase.MyViewPage { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.android.gift.GiftActivity { <init>(...); }
+
+# view res/layout/rc_ac_webview.xml #generated:7
+-keep class io.rong.common.RongWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class io.rong.imkit.RongActivity { <init>(...); }
+
+# view res/layout/conversation.xml #generated:101
+-keep class io.rong.imkit.fragment.ConversationFragment { <init>(...); }
+
+# view res/layout/rc_fr_conversation.xml #generated:7
+-keep class io.rong.imkit.fragment.MessageInputFragment { <init>(...); }
+
+# view res/layout/rc_fr_conversation.xml #generated:14
+-keep class io.rong.imkit.fragment.MessageListFragment { <init>(...); }
+
+# view res/layout/rc_item_text_message.xml #generated:3
+-keep class io.rong.imkit.model.LinkTextView { <init>(...); }
+
+# view res/layout/rc_fr_conversation_member_list.xml #generated:7
+-keep class io.rong.imkit.model.RongGridView { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class io.rong.imkit.tools.PreviewPictureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class io.rong.imkit.tools.RongWebviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class io.rong.imkit.tools.SelectPictureActivity { <init>(...); }
+
+# view res/layout/rc_ac_selected_pictrue.xml #generated:30
+# view res/layout/rc_calledside_layout.xml #generated:72
+# view res/layout/rc_callside_layout.xml #generated:32
+# view res/layout/rc_fr_public_service_inf.xml #generated:24
+# view res/layout/rc_item_albums.xml #generated:6
+# view res/layout/rc_item_conversation.xml #generated:18
+# view res/layout/rc_item_conversation.xml #generated:64
+# view res/layout/rc_item_conversation_member.xml #generated:9
+# view res/layout/rc_item_image_message.xml #generated:7
+# view res/layout/rc_item_location_message.xml #generated:14
+# view res/layout/rc_item_message.xml #generated:19
+# view res/layout/rc_item_message.xml #generated:30
+# view res/layout/rc_item_preview_fragment.xml #generated:7
+# view res/layout/rc_item_public_service_list.xml #generated:13
+# view res/layout/rc_item_public_service_message.xml #generated:30
+# view res/layout/rc_item_public_service_multi_rich_content_message.xml #generated:15
+# view res/layout/rc_item_public_service_rich_content_message.xml #generated:28
+# view res/layout/rc_item_public_service_search.xml #generated:11
+# view res/layout/rc_item_rich_content_message.xml #generated:22
+-keep class io.rong.imkit.widget.AsyncImageView { <init>(...); }
+
+# view res/layout/rc_fr_messageinput.xml #generated:3
+-keep class io.rong.imkit.widget.InputView { <init>(...); }
+
+# view res/layout/rc_item_conversation.xml #generated:48
+# view res/layout/rc_item_message.xml #generated:93
+-keep class io.rong.imkit.widget.ProviderContainerView { <init>(...); }
+
+# view res/layout/rc_wi_ext_pager.xml #generated:17
+-keep class io.rong.imkit.widget.RCCircleFlowIndicator { <init>(...); }
+
+# view res/layout/rc_wi_ext_pager.xml #generated:10
+-keep class io.rong.imkit.widget.RCViewFlow { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class io.rong.imkit.widget.provider.TakingPicturesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class io.rong.imlib.HeartbeatReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class io.rong.imlib.ReConnectService { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class io.rong.imlib.ipc.PushMessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class io.rong.imlib.ipc.RongService { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class io.rong.push.CommandService { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class io.rong.push.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class io.rong.push.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class io.rong.voipkit.activity.CallSideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class io.rong.voipkit.activity.CalledSideActivity { <init>(...); }
+
+# view res/layout/rc_fr_photo.xml #generated:5
+# view res/layout/rc_fr_photo2.xml #generated:5
+-keep class uk.co.senab.photoview.PhotoView { <init>(...); }
+
+# onClick res/layout/rc_calledside_layout.xml #generated:51
+# onClick res/layout/rc_callside_layout.xml #generated:11
+-keepclassmembers class * { *** doFinishChat(...); }
+
+# onClick res/layout/rc_calledside_layout.xml #generated:26
+-keepclassmembers class * { *** doRefuse(...); }
+
+# onClick res/layout/rc_calledside_layout.xml #generated:37
+-keepclassmembers class * { *** doYes(...); }
+
+# onClick res/layout/rc_ac_albums.xml #generated:24
+# onClick res/layout/rc_ac_preview.xml #generated:43
+# onClick res/layout/rc_ac_selected_pictrue.xml #generated:15
+# onClick res/layout/rc_ac_selected_pictrue.xml #generated:45
+-keepclassmembers class * { *** ok(...); }
+
